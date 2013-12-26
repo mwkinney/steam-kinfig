@@ -1,0 +1,33 @@
+Ask about the seer size and the matching comments the other company said in their letter
+
+
+ Break the project into its component problems and write units of code to solve eac component
+ 
+ It has to know how to search through directories for files. It has to know how to modify XML. It has to know how to save/move files.
+ 
+ 
+The kinney-config Steam app looks for the Steam directory, asks you if you want to modify the configuration file text size and window location, you make your selections and confirm. It copies your steam configuration to the steam skins directory, makes a backup copy and then commits the changes to the original. It will have a revert option. It should save the location of your steam directory to a config file within the steam-config app.  It will have the ability for you to walk it to the steam directory in case it is non-default. It will be crossplatform and have a GUI.
+
+nouns- directory, configuration
+verbs- modify, selections, confirm, copies, commits, revert, looks, 
+
+
+	asl	well, if you import the whole sys, you wouldn't need to import platform
+	asl	you can call exit using sys.exit()
+	yenic	platform is a part of sys?
+	asl	sortof
+	asl	there a sys.platform
+	asl	$ python -m timeit "import sys; sys.platform"
+	asl	1000000 loops, best of 3: 1.25 usec per loop
+	asl	$ python -m timeit "import sys; sys.platform"
+	asl	1000000 loops, best of 3: 1.3 usec per loop
+	asl	$ python -m timeit "import sys; sys.platform"
+	asl	1000000 loops, best of 3: 1.24 usec per loop
+	asl	$ python -m timeit "import platform; platform.system()"
+	asl	100000 loops, best of 3: 2.14 usec per loop
+	asl	$ python -m timeit "import platform; platform.system()"
+	asl	100000 loops, best of 3: 2.12 usec per loop
+	asl	$ python -m timeit "import platform; platform.system()"
+	asl	100000 loops, best of 3: 2.17 usec per loop
+	yenic	i will look into that. i put that into my notes for that project
+	asl	system is faster than platform
