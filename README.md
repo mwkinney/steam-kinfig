@@ -1,1 +1,1 @@
-steam-kinfig
+Configuration utility for Valve's Steam software
