@@ -1,8 +1,4 @@
-Ask about the seer size and the matching comments the other company said in their letter
-
-
  Break the project into its component problems and write units of code to solve eac component
- 
  It has to know how to search through directories for files. It has to know how to modify XML. It has to know how to save/move files.
  
  
@@ -12,22 +8,22 @@ nouns- directory, configuration
 verbs- modify, selections, confirm, copies, commits, revert, looks, 
 
 
-	asl	well, if you import the whole sys, you wouldn't need to import platform
-	asl	you can call exit using sys.exit()
-	yenic	platform is a part of sys?
-	asl	sortof
-	asl	there a sys.platform
-	asl	$ python -m timeit "import sys; sys.platform"
-	asl	1000000 loops, best of 3: 1.25 usec per loop
-	asl	$ python -m timeit "import sys; sys.platform"
-	asl	1000000 loops, best of 3: 1.3 usec per loop
-	asl	$ python -m timeit "import sys; sys.platform"
-	asl	1000000 loops, best of 3: 1.24 usec per loop
-	asl	$ python -m timeit "import platform; platform.system()"
-	asl	100000 loops, best of 3: 2.14 usec per loop
-	asl	$ python -m timeit "import platform; platform.system()"
-	asl	100000 loops, best of 3: 2.12 usec per loop
-	asl	$ python -m timeit "import platform; platform.system()"
-	asl	100000 loops, best of 3: 2.17 usec per loop
-	yenic	i will look into that. i put that into my notes for that project
-	asl	system is faster than platform
+	well, if you import the whole sys, you wouldn't need to import platform
+	you can call exit using sys.exit()
+	platform is a part of sys?
+	sortof
+	there a sys.platform
+	$ python -m timeit "import sys; sys.platform"
+	1000000 loops, best of 3: 1.25 usec per loop
+	$ python -m timeit "import sys; sys.platform"
+	1000000 loops, best of 3: 1.3 usec per loop
+	$ python -m timeit "import sys; sys.platform"
+	1000000 loops, best of 3: 1.24 usec per loop
+	$ python -m timeit "import platform; platform.system()"
+	100000 loops, best of 3: 2.14 usec per loop
+	$ python -m timeit "import platform; platform.system()"
+	100000 loops, best of 3: 2.12 usec per loop
+	$ python -m timeit "import platform; platform.system()"
+	100000 loops, best of 3: 2.17 usec per loop
+	i will look into that. i put that into my notes for that project
+	system is faster than platform
